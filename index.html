@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>suddenly boom</title>
+</head>
+
+<body>
+
+<h1>We are Suddenly Boom!</h1>
+<h2>The best band in the world!</h2>
+
+<script type="text/javascript">
+  var clicks = 0;
+  function onClick() {
+      clicks += 1;
+      document.getElementById("clicks").innerHTML = clicks;
+  };
+</script>
+
+<h3>How many times do you wanna see us play?</h3>
+<button type="button" onClick="onClick()">Click me</button>
+<p>I want to see Suddenly Boom play: <a id="clicks">0</a> times</p>
+
+
+</body>
+
+</html>
