@@ -1,2 +1,3 @@
-# suddenlyboom.octocat.github.io
-# suddenlyboom.octocat.github.io
+---
+permalink: /index.html
+---
