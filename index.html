@@ -15,6 +15,36 @@
   function onClick() {
       clicks += 1;
       document.getElementById("clicks").innerHTML = clicks;
+      if(clicks > 5){
+      	document.getElementById("abhi").innerHTML = "Abhishek is getting less dramatic";  
+      }
+      if(clicks > 15){
+        document.getElementById("abhi").innerHTML = "Abhishek is chilling";
+      }
+      if(clicks > 20){
+        document.getElementById("abhi").innerHTML = "Where is Abhishek?";
+      }
+      if(clicks > 32){
+        document.getElementById("abhi").innerHTML = "Abhishek is playing the piano";
+      }
+      if(clicks > 43){
+        document.getElementById("abhi").innerHTML = "Abhishek is actually happy";
+      }
+      if(clicks > 54){
+        document.getElementById("abhi").innerHTML = "Abhishek is teaching us how to dance";
+      }
+      if(clicks > 76){
+        document.getElementById("abhi").innerHTML = "Suddenly Boom!";
+      }
+      if(clicks > 100){
+        document.getElementById("abhi").innerHTML = "Abhishek is naked";
+      }
+      if(clicks > 111){
+        document.getElementById("abhi").innerHTML = "Abhishek will cook for you";
+      }
+      if(clicks > 170){
+        document.getElementById("abhi").innerHTML = "You are Abhi's BIGGEST FAN!!";
+      }
   };
 </script>
 
@@ -23,7 +53,7 @@
 <p>I want to see Suddenly Boom play: <a id="clicks">0</a> times</p>
 
 
-<h1>Abhishek is being dramatic</h1>
+<h1 id="abhi">Abhishek is being dramatic</h1>
 
 </body>
 
