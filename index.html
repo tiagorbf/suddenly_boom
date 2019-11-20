@@ -10,13 +10,26 @@
 <h1>We are Suddenly Boom!</h1>
 <h2>The best band in the world!</h2>
 
+<h3>How many times do you wanna see us play?</h3>
+<button type="button" onClick="onClick()">Click me</button>
+<p>I want to see Suddenly Boom play: <a id="clicks">0</a> times</p>
+
+
+<h1 id="abhi">Abhishek is being dramatic</h1>
+
+<h2>Share how much you love uses:</h2>
+<h3 id="link">http://suddenlyboom.com</h3>
+
 <script type="text/javascript">
-  var clicks = 0;
+  var url = new URL(window.location.href);
+  var c = url.searchParams.get("count") || 0;
+  var clicks = parseInt(c) - 1;
+  onClick();
   function onClick() {
       clicks += 1;
       document.getElementById("clicks").innerHTML = clicks;
       if(clicks > 5){
-      	document.getElementById("abhi").innerHTML = "Abhishek is getting less dramatic";  
+        document.getElementById("abhi").innerHTML = "Abhishek is getting less dramatic";
       }
       if(clicks > 15){
         document.getElementById("abhi").innerHTML = "Abhishek is chilling";
@@ -45,15 +58,9 @@
       if(clicks > 170){
         document.getElementById("abhi").innerHTML = "You are Abhi's BIGGEST FAN!!";
       }
+      document.getElementById("link").innerHTML = "http://suddenlyboom.com?count=" + clicks;
   };
 </script>
-
-<h3>How many times do you wanna see us play?</h3>
-<button type="button" onClick="onClick()">Click me</button>
-<p>I want to see Suddenly Boom play: <a id="clicks">0</a> times</p>
-
-
-<h1 id="abhi">Abhishek is being dramatic</h1>
 
 </body>
 
